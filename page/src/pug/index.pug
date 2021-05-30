@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title JugandoEnLinux
+        title JugandoLinux
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -31,7 +31,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
             .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top') JugandoEnLinux
+                a.navbar-brand.js-scroll-trigger(href='#page-top') JugandoLinux
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
@@ -43,7 +43,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#portfolio') Catálogo de juegos
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#contact') Contact
+                            a.nav-link.js-scroll-trigger(href='#contact') Contáctanos
 
         // Masthead
         header.masthead
@@ -76,24 +76,29 @@ html(lang='en')
                 .row
                     .col-lg-3.col-md-6.text-center
                         .mt-5
-                            i.fas.fa-4x.fa-gem.text-primary.mb-4
-                            h3.h4.mb-2 Sturdy Themes
-                            p.text-muted.mb-0 Our themes are updated regularly to keep them bug free!
+                            a(href="https://discord.gg/qBfDhrCRQ8", target="_blank")
+                                i.fab.fa-4x.fa-discord.text-primary.mb-4
+                                h3.h4.mb-2 Discord
+                                p.text-muted.mb-0
                     .col-lg-3.col-md-6.text-center
                         .mt-5
-                            i.fas.fa-4x.fa-laptop-code.text-primary.mb-4
-                            h3.h4.mb-2 Up to Date
-                            p.text-muted.mb-0 All dependencies are kept current to keep things fresh.
+                            a(href="https://www.youtube.com/channel/UC8-mr-3Qhnem2sSPw6sKV0g", target="_blank")
+                                i.fab.fa-4x.fa-youtube.text-primary.mb-4
+                                h3.h4.mb-2 YouTube
+                                p.text-muted.mb-0 
+                                
                     .col-lg-3.col-md-6.text-center
                         .mt-5
-                            i.fas.fa-4x.fa-globe.text-primary.mb-4
-                            h3.h4.mb-2 Ready to Publish
-                            p.text-muted.mb-0 You can use this design as is, or you can make changes!
+                            a(href="https://twitch.tv/rafexone", target="_blank")
+                                i.fab.fa-4x.fa-twitch.text-primary.mb-4
+                                h3.h4.mb-2 Twitch
+                                p.text-muted.mb-0
                     .col-lg-3.col-md-6.text-center
                         .mt-5
-                            i.fas.fa-4x.fa-heart.text-primary.mb-4
-                            h3.h4.mb-2 Made with Love
-                            p.text-muted.mb-0 Is it really open source if it's not made with love?
+                            a(href="#")
+                              i.fab.fa-4x.fa-github.text-primary.mb-4
+                              h3.h4.mb-2 GitHub
+                              p.text-muted.mb-0
 
         // Portfolio
         div#portfolio
@@ -147,12 +152,36 @@ html(lang='en')
                                     | Category
                                 .project-name
                                     | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/5.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/5.jpg', alt='...')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/6.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/6.jpg', alt='...')
+                            .portfolio-box-caption.p-3
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/6.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/6.jpg', alt='...')
+                            .portfolio-box-caption.p-3
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name                
 
         // Call to action
         section.page-section.bg-dark.text-white
             .container.text-center
-                h2.mb-4 Free Download at Start Bootstrap!
-                a.btn.btn-light.btn-xl(href='https://startbootstrap.com/theme/creative/') Download Now!
+                h2.mb-4 ¡Quiero Jugar!
+                a.btn.btn-light.btn-xl(href='https://github.com/JugandoLinux/instaladorJuegos/releases/', target="_blank") ¡Descargalo ya!
 
         // Contact
         section#contact.page-section
